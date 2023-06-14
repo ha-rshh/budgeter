@@ -87,7 +87,7 @@ const App = () => {
           max="3000-12-31"
           required
         />
-        <button onClick={handleSubmit}>SAVE</button>
+        <button onClick={handleSubmit} className="savebtn">SAVE</button>
       </div>
 
       <div className={"list-layout"}>

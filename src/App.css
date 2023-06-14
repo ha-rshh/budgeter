@@ -7,7 +7,14 @@
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: blanchedalmond;
+
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(34, 166, 153, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -28,7 +35,12 @@ input::-webkit-inner-spin-button {
   height: 30px;
 }
 .form-layout button {
-  padding: 3px;
+  background-color: #f2be22;
+  border: none;
+  border-radius: 2px;
+  height: 30px;
+  padding: 5px;
+  cursor: pointer;
 }
 .list-layout {
   display: flex;
@@ -46,9 +58,10 @@ input::-webkit-inner-spin-button {
 .list {
   width: 200px;
   height: 250px;
-  background-color: rgb(255, 185, 159);
+  background-color: #f29727;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .amount {
   text-align: right;
@@ -64,17 +77,17 @@ input::-webkit-inner-spin-button {
   word-wrap: break-word;
 }
 
-.del, .edit {
- 
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: rgb(218, 74, 74);
-    border: none;
-    font-weight: 600;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    cursor: pointer;
-    margin: 0 5px; 
+.del,
+.edit {
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  background-color: rgb(218, 74, 74);
+  border: none;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  margin: 0 5px;
 }
 
 .date {
