@@ -17,7 +17,7 @@ const App = () => {
   const handleDate = (e) => {
     setDate(e.target.value);
   };
-
+ 
   const handleSubmit = () => {
     {
       amount,
@@ -38,7 +38,14 @@ const App = () => {
     setDescription("")
     setDate('')
   };
-
+ const handleDel = (id) => {
+  console.log("click")
+   setData((item) => {
+     return item.filter((arr, index) => {
+       return index !== id;
+     });
+   });
+ };
   return (
     <>
       <Navbar />
@@ -81,7 +88,7 @@ const App = () => {
                 <p>{item.description}</p>
               </div>
               <div className="date">
-                <button className="del">X</button>
+                <button className="del" onClick={handleDel}>X</button>
                 <span>{item.date}</span>
               </div>
             </div>
